@@ -1,0 +1,49 @@
+#crypter une lettre
+"""
+lettre=input("Saisir la lettre à coder")
+code = ord(lettre)
+y=(24*code+61)%95
+z=y+32
+crypt = chr(z)
+print("la lettre",lettre,"est crypté en",crypt)
+"""
+#crypter un texte
+"""
+texte=input("Saisir un texte à crypter :")
+text_crypt =""
+for lettre in texte :
+    code = ord(lettre)
+    y=(24*code+61)%95
+    z=y+32
+    crypt=chr(z)
+    text_crypt=text_crypt+crypt
+
+print("Le texte crypté est", text_crypt)
+"""
+#autre technique
+"""
+texte=input("Saisir un texte à crypter :")
+text_crypt =""
+for k in range(0,len(texte)) :
+    code = ord(texte[k])
+    y=(24*code+61)%95
+    z=y+32
+    crypt=chr(z)
+    text_crypt=text_crypt+crypt
+
+print("Le texte crypté est", text_crypt)
+#crypter une lettre sur deux
+"""
+texte=input("Saisir un texte à crypter :")
+text_crypt =""
+for k in range(0,len(texte)) :
+    if k%2==0:
+        code = ord(texte[k])
+        y=(24*code+61)%95
+        z=y+32
+        crypt=chr(z)
+        text_crypt=text_crypt+crypt
+    else:
+       text_crypt=text_crypt+texte[k]
+        
+print("Le texte crypté est", text_crypt)
