@@ -195,7 +195,7 @@ def draw_game_over(surface, score):
 
 
 # ─────────────────────────────────────────
-#  BOUCLE PRINCIPALE
+#  BOUCLE PRINCIPAL
 # ─────────────────────────────────────────
 def main():
     player    = Player(WIDTH // 4, HEIGHT - 60)
